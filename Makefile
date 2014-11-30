@@ -1,9 +1,9 @@
 CC=g++
-CFLAGS=-c -Wall
-LDFLAGS=-lSDL2 -lSDL_image -lGL -lGLU
-SOURCES=SDL_and_opengl.cpp
+CFLAGS=-c -Wall -Iinc
+LDFLAGS=-lSDL2 -lGL -lGLU
+SOURCES=game.cpp main.cpp timer.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=SDL_and_opengl
+EXECUTABLE=ceng356.out
 OBJ_DIR=obj
 
 all: $(SOURCES) $(EXECUTABLE)
