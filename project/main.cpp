@@ -7,7 +7,7 @@ int main (int argc, char* args[])
 		fprintf(stderr, "Failed to initialize!\n");
 
 	game.loop();
-	game.close();
+	game.shut_down();
 
 	return 0;
 }
